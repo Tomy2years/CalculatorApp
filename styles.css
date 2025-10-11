@@ -1,0 +1,124 @@
+/* CSS styles for the futuristic calculator */
+:root {
+    --primary-bg: #0d021a;
+    --secondary-bg: #1a0a33;
+    --display-bg: rgba(10, 2, 26, 0.6);
+    --primary-glow: #9e00ff;
+    --secondary-glow: #d07fff;
+    --text-color: #f0e6ff;
+    --operator-bg: #4c1a7d;
+    --operator-hover-bg: #6a2ca3;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1e0a45, var(--primary-bg));
+    color: var(--text-color);
+}
+
+.calculator-container {
+    width: 100%;
+    max-width: 380px;
+    background-color: var(--secondary-bg);
+    border-radius: 20px;
+    border: 1px solid var(--primary-glow);
+    padding: 25px;
+    box-shadow: 0 0 25px rgba(158, 0, 255, 0.4), 0 0 10px rgba(158, 0, 255, 0.3) inset;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.display {
+    width: 100%;
+    background-color: var(--display-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: right;
+    border: 1px solid var(--operator-bg);
+    box-shadow: 0 0 10px rgba(158, 0, 255, 0.2) inset;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display .previous-operand {
+    font-size: 1.2rem;
+    color: var(--secondary-glow);
+    opacity: 0.7;
+    min-height: 24px;
+}
+
+.display .current-operand {
+    font-size: 2.5rem;
+    min-height: 48px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-color);
+    transition: all 0.2s ease-in-out;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--secondary-glow);
+    box-shadow: 0 0 10px var(--secondary-glow);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.operator {
+    background-color: var(--operator-bg);
+    color: var(--text-color);
+}
+
+.operator:hover {
+    background-color: var(--operator-hover-bg);
+     border-color: var(--primary-glow);
+    box-shadow: 0 0 10px var(--primary-glow);
+}
+
+.equals {
+    background-color: var(--primary-glow);
+}
+
+.equals:hover {
+    background-color: #b133ff;
+    box-shadow: 0 0 15px #b133ff;
+}
