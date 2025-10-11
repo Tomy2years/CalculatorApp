@@ -2,12 +2,6 @@
 
 A sleek, modern calculator with a futuristic black and purple aesthetic, built with vanilla HTML, CSS, and JavaScript. This project demonstrates core web development skills, including DOM manipulation, event handling, and modern CSS styling with a responsive grid layout.
 
-## Preview
-
-![Futuristic Calculator Screenshot](https://i.imgur.com/rL4A2sZ.png)
-
-*(Suggestion: To create your own screenshot, run the calculator, take a picture of it, upload it to your repository, and update the link above.)*
-
 ## Features
 
 -   **Standard Arithmetic Operations:** Addition, subtraction, multiplication (`X`), and division (`÷`).
