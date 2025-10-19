@@ -1,6 +1,6 @@
 # Futuristic Calculator
 
-A sleek, modern calculator with a futuristic black and purple aesthetic, built with vanilla HTML, CSS, and JavaScript. This project demonstrates core web development skills, including DOM manipulation, event handling, and modern CSS styling with a responsive grid layout.
+A sleek, modern calculator with a futuristic black and purple aesthetic, built with HTML, CSS, and JavaScript. This project demonstrates core web development skills, including DOM manipulation, event handling, and modern CSS styling with a responsive grid layout.
 
 ## Features
 
